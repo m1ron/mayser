@@ -93,6 +93,10 @@ h1, h2, h3, h4, h5, h6,
     filter: blur(100px);
     opacity: 0;
     transition: opacity 2.4s $bezier;
+    display: none;
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
 
     .loaded & {
       opacity: 1;
