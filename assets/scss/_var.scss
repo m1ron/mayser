@@ -1,0 +1,70 @@
+// ===== VARIABLES =====
+$min-width: 320px;
+$max-width: 1920px;
+
+// Media Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  min: 321px, // Min width
+  xss: 370px, // iPhone SE
+  xsm: 390px, // iPhone 14
+  xsl: 420px, // iPhone Plus/Max
+  sm: 572px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1440px
+) !default;
+
+// Paths
+$img: '../img';
+$fonts: '../fonts';
+
+// Fonts
+$font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+// Colors
+$color-blue: #0f8fff;
+$color-navy: #03062e;
+$color-indigo: #12122c;
+$color-royal: #163366;
+$color-steel: #7e848d;
+$color-cool: #c5c9cc;
+
+// Transition Settings
+$bezier: cubic-bezier(.250, .460, .450, .940);
+$easing: ease;
+$effect: .3s $easing;
+$effect-s: .15s $easing;
+$effect-l: .6s $easing;
+
+// Mixins
+@mixin pseudo {
+  content: '';
+  display: block;
+  overflow: hidden;
+}
+
+@mixin clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@mixin font-smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin user-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin user-drag {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
