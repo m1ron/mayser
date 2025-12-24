@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  margin-bottom: .5278em;
+  margin-bottom: .51389em;
   font-size: 32px;
   line-height: normal;
   font-weight: 500;
@@ -99,7 +99,7 @@ h2, .h2 {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
-  letter-spacing: .385em;
+  letter-spacing: .4em;
   color: $color-cool;
   position: relative;
   @include media-breakpoint-up(xss) {
@@ -118,7 +118,7 @@ h2, .h2 {
 
   &.animation {
     opacity: 0;
-    letter-spacing: .36em;
+    letter-spacing: .42em;
     transition: opacity 2.4s $bezier, letter-spacing 2.4s $bezier;
 
     h1 + & {
@@ -127,7 +127,7 @@ h2, .h2 {
 
     .loaded & {
       opacity: 1;
-      letter-spacing: .385em;
+      letter-spacing: .4em;
     }
   }
 }
@@ -138,7 +138,7 @@ h3, .h3 {
   font-size: 11px;
   font-weight: 500;
   line-height: 1.4;
-  letter-spacing: .42em;
+  letter-spacing: .455em;
   color: $color-cool;
   position: relative;
   @include media-breakpoint-up(xss) {
@@ -151,13 +151,13 @@ h3, .h3 {
     left: -.6em;
   }
   @include media-breakpoint-up(xl) {
-    margin-top: 30px;
+    margin-top: 29px;
     font-size: 16px;
   }
 
   &.animation {
     opacity: 0;
-    letter-spacing: .4em;
+    letter-spacing: .475em;
     transition: opacity 2.4s $bezier, letter-spacing 2.4s $bezier;
 
     h2 + & {
@@ -166,7 +166,7 @@ h3, .h3 {
 
     .loaded & {
       opacity: 1;
-      letter-spacing: .42em;
+      letter-spacing: .455em;
     }
   }
 }
@@ -203,7 +203,7 @@ h3, .h3 {
   @include media-breakpoint-up(md) {
     font-size: 18px;
     line-height: 1.7858em;
-    letter-spacing: .585em;
+    letter-spacing: .6em;
   }
   @include media-breakpoint-up(lg) {
     font-size: 22px;
@@ -471,7 +471,7 @@ h3, .h3 {
 /* ===== FORM ===== */
 .form {
   &-code {
-    margin-top: 38px;
+    margin-top: 36px;
     position: relative;
     display: flex;
     gap: 16px;
@@ -635,7 +635,7 @@ h3, .h3 {
   h1 {
     margin-bottom: .5em;
     @include media-breakpoint-up(md) {
-      margin-bottom: .47222222em;
+      margin-bottom: .444em;
     }
   }
 }
@@ -716,7 +716,7 @@ h3, .h3 {
 /* ===== REQUEST ===== */
 .request {
   h2 {
-    letter-spacing: .485em;
+    letter-spacing: .5em;
     line-height: 2.3215em;
     @include media-breakpoint-down(sm) {
       font-size: 14px;
@@ -897,12 +897,10 @@ h3, .h3 {
 
   &.animation {
     opacity: 0;
-    transform: translateY(100%);
-    transition: opacity 1.2s $bezier, transform 1.2s $bezier;
-    transition-delay: 2s;
+    transition: opacity 1.2s ease-in-out;
+    transition-delay: 2.2s;
 
     .loaded & {
-      transform: translateY(0);
       opacity: 1;
     }
   }
@@ -914,10 +912,10 @@ h3, .h3 {
     font-size: 10px;
     line-height: 1.4;
     font-weight: 500;
-    letter-spacing: .3em;
+    letter-spacing: .4em;
     @include media-breakpoint-up(lg) {
       font-size: 11px;
-      letter-spacing: .4em;
+      letter-spacing: .455em;
     }
     @include media-breakpoint-up(xl) {
       font-size: 12px;
